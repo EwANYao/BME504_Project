@@ -1,6 +1,8 @@
 # BME504_Project
 BME504 project
 
+# aim1
+
 ## 第一个问题：CV和CC比较的话看Ith 并不看 Qth
 1. 生理学传统：电流是兴奋的基础电生理学的经典模型将电流视为产生兴奋的直接驱动力。强度-时程曲线（Strength–Duration Curve）：由 $\text{Lapicque}$ (1907) 定义，其基础变量就是电流。$\text{Lapicque}$ 公式：$\mathbf{I}_{\text{th}}(\tau) = \mathbf{I}_{\mathbf{r}}\left(1+\frac{\tau_{\mathbf{c}}}{\tau}\right)$，其中 $\mathbf{I}_{\mathbf{r}}$（基电流）是电流阈值的绝对下限。实验的便利性： 在神经刺激实验中，恒电流（$\text{CC}$）刺激是最常见的模式。实验者可以精确控制和测量电极输出的电流强度。直接可比性： 实测的 $\mathbf{I}_{\text{th}}$ 可直接用于比较不同神经纤维、不同波形或不同生理条件下的兴奋性。
 
@@ -95,3 +97,39 @@ CC 的 Qₜₕ 绝对值更大，是因为恒流方波在阈值时持续时间�
 Qth（Threshold charge）
 → 是波形的积分面积：Qth = A_th × ∫ I_unit dt。
 → 同样与 A_th 成正比
+
+# aim2
+## 结果
+
+### Ith Ratio (CV/CC) vs diameter
+
+Ith Ratio=Ith, CC / Ith, CV
+当比值 ≈ 1 时，表示 CV (恒压) 和 CC (恒流) 的阈电流几乎相同；
+
+比值 > 1 说明 CV 需要更大的峰值电流才能激发同样的神经纤维。
+
+结果：
+
+小直径（≤ 6 µm）纤维： ratio ≈ 1 → ETI 滤波影响小，CV 与 CC 几乎等效。
+
+大直径（≥ 8 µm）纤维： ratio 迅速上升到 4–5 → 恒压模式显著降低了大纤维的兴奋性。
+
+解释：
+
+ETI 电容使电流前沿变慢（低通滤波）；
+
+大直径纤维膜时间常数短、对慢上升信号钝化更强（accommodation）；
+
+结果：在 CV 刺激下，大纤维被“过滤掉”，小纤维相对更容易激发。
+
+
+### Recruitment curves (CC vs CV) 与 Recruitment difference
+
+CC（标准双相方波，阴极先）在低到中等电流下比 CV（ETI 滤波后由电压→电流得到的波形）更早招募纤维。也就是说，在同一刺激峰值下，CC 激活的纤维比例更高。
+
+差异在中低电流区最大（差值曲线在大约几十到上百 µA 的范围达到峰值），高电流时两者都几乎完全招募（差回到 0）。
+
+按面积加权（d²）会放大差异：area-weighted 的 CC − CV 峰值明显高于 unweighted。说明 CC 在那些电流区主要多招募的是较粗的纤维，而 CV 在相同电流下尚未招募这些粗纤维。
+
+你的 Ith 曲线也显示：CV 的 Ith 随直径增大上升更快（大直径更难被 CV 激活），因此 CV 相较 CC 对大直径的不利更明显（这正好解释第 3 点）。
+
