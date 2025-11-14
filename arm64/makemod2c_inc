@@ -1,0 +1,8 @@
+./AXNODE.c: .././AXNODE.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../.";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "AXNODE.mod" -o "/Users/ewanyao/Downloads/MRGaxon/arm64")
+
+./AXNODE.o: ./AXNODE.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../." $(INCLUDES) -fPIC -c $< -o $@
+
