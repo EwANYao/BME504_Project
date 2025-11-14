@@ -4,7 +4,23 @@ BME504 project
 # aim1
 
 ## 第一个问题：CV和CC比较的话看Ith 并不看 Qth
-1. 生理学传统：电流是兴奋的基础电生理学的经典模型将电流视为产生兴奋的直接驱动力。强度-时程曲线（Strength–Duration Curve）：由 $\text{Lapicque}$ (1907) 定义，其基础变量就是电流。$\text{Lapicque}$ 公式：$\mathbf{I}_{\text{th}}(\tau) = \mathbf{I}_{\mathbf{r}}\left(1+\frac{\tau_{\mathbf{c}}}{\tau}\right)$，其中 $\mathbf{I}_{\mathbf{r}}$（基电流）是电流阈值的绝对下限。实验的便利性： 在神经刺激实验中，恒电流（$\text{CC}$）刺激是最常见的模式。实验者可以精确控制和测量电极输出的电流强度。直接可比性： 实测的 $\mathbf{I}_{\text{th}}$ 可直接用于比较不同神经纤维、不同波形或不同生理条件下的兴奋性。
+1. 生理学传统：电流是兴奋的基础
+
+电生理学的经典模型将电流视为产生兴奋的直接驱动力。
+
+强度–时程曲线（Strength–Duration Curve）：
+由 Lapicque (1907) 定义，其基础变量就是电流。
+
+Lapicque 公式：
+	​Ith​(τ)=Ir​(1+τc​/τ ​)
+
+Ir（基电流）是电流阈值的绝对下限。
+
+实验的便利性：
+在神经刺激实验中，恒电流（CC）刺激是最常见的模式。实验者可以精确控制和测量电极输出的电流强度。
+
+直接可比性：
+实测的 Ith可直接用于比较不同神经纤维、不同波形或不同生理条件下的兴奋性
 
 
 ### 模型：代码用的是MRG-like simplified model
